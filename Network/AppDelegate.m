@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DnsController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    CGRect rect = [[UIScreen mainScreen] bounds];
+    self.window = [[UIWindow alloc] initWithFrame:rect];
+    DnsController * dnsCtrl = [[DnsController alloc] init];
+    [self.window setRootViewController:dnsCtrl];
+    [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
 }

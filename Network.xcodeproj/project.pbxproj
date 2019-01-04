@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7FD9C7ED21DE2DC50028F582 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9C7EC21DE2DC50028F582 /* AppDelegate.m */; };
-		7FD9C7F021DE2DC50028F582 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9C7EF21DE2DC50028F582 /* ViewController.m */; };
-		7FD9C7F321DE2DC50028F582 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD9C7F121DE2DC50028F582 /* Main.storyboard */; };
 		7FD9C7F521DE2DC60028F582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FD9C7F421DE2DC60028F582 /* Assets.xcassets */; };
 		7FD9C7F821DE2DC60028F582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD9C7F621DE2DC60028F582 /* LaunchScreen.storyboard */; };
 		7FD9C7FB21DE2DC60028F582 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9C7FA21DE2DC60028F582 /* main.m */; };
 		7FD9C80521DE2DC60028F582 /* NetworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9C80421DE2DC60028F582 /* NetworkTests.m */; };
 		7FD9C81021DE2DC60028F582 /* NetworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9C80F21DE2DC60028F582 /* NetworkUITests.m */; };
+		7FD9C81F21DE2EAA0028F582 /* DnsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9C81E21DE2EAA0028F582 /* DnsController.m */; };
+		7FD9C82221DE3CC00028F582 /* udp.c in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9C82121DE3CC00028F582 /* udp.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +38,6 @@
 		7FD9C7E821DE2DC50028F582 /* Network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Network.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD9C7EB21DE2DC50028F582 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7FD9C7EC21DE2DC50028F582 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7FD9C7EE21DE2DC50028F582 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7FD9C7EF21DE2DC50028F582 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7FD9C7F221DE2DC50028F582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FD9C7F421DE2DC60028F582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FD9C7F721DE2DC60028F582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FD9C7F921DE2DC60028F582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +48,10 @@
 		7FD9C80B21DE2DC60028F582 /* NetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD9C80F21DE2DC60028F582 /* NetworkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkUITests.m; sourceTree = "<group>"; };
 		7FD9C81121DE2DC60028F582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FD9C81D21DE2EAA0028F582 /* DnsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DnsController.h; sourceTree = "<group>"; };
+		7FD9C81E21DE2EAA0028F582 /* DnsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnsController.m; sourceTree = "<group>"; };
+		7FD9C82021DE3CC00028F582 /* udp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = udp.h; sourceTree = "<group>"; };
+		7FD9C82121DE3CC00028F582 /* udp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = udp.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +104,10 @@
 			children = (
 				7FD9C7EB21DE2DC50028F582 /* AppDelegate.h */,
 				7FD9C7EC21DE2DC50028F582 /* AppDelegate.m */,
-				7FD9C7EE21DE2DC50028F582 /* ViewController.h */,
-				7FD9C7EF21DE2DC50028F582 /* ViewController.m */,
-				7FD9C7F121DE2DC50028F582 /* Main.storyboard */,
+				7FD9C81D21DE2EAA0028F582 /* DnsController.h */,
+				7FD9C81E21DE2EAA0028F582 /* DnsController.m */,
+				7FD9C82021DE3CC00028F582 /* udp.h */,
+				7FD9C82121DE3CC00028F582 /* udp.c */,
 				7FD9C7F421DE2DC60028F582 /* Assets.xcassets */,
 				7FD9C7F621DE2DC60028F582 /* LaunchScreen.storyboard */,
 				7FD9C7F921DE2DC60028F582 /* Info.plist */,
@@ -237,7 +239,6 @@
 			files = (
 				7FD9C7F821DE2DC60028F582 /* LaunchScreen.storyboard in Resources */,
 				7FD9C7F521DE2DC60028F582 /* Assets.xcassets in Resources */,
-				7FD9C7F321DE2DC50028F582 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FD9C7F021DE2DC50028F582 /* ViewController.m in Sources */,
 				7FD9C7FB21DE2DC60028F582 /* main.m in Sources */,
 				7FD9C7ED21DE2DC50028F582 /* AppDelegate.m in Sources */,
+				7FD9C81F21DE2EAA0028F582 /* DnsController.m in Sources */,
+				7FD9C82221DE3CC00028F582 /* udp.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +302,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7FD9C7F121DE2DC50028F582 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7FD9C7F221DE2DC50028F582 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7FD9C7F621DE2DC60028F582 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -443,7 +437,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = f.Network;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -459,7 +453,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = f.Network;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
