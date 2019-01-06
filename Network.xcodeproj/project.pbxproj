@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72738DA721DFA51A00D528D4 /* dns.c in Sources */ = {isa = PBXBuildFile; fileRef = 72738DA621DFA51A00D528D4 /* dns.c */; };
+		72A0994521E1D31B00417E5B /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72A0994421E1CD9C00417E5B /* iconfont.ttf */; };
 		7FD9C7ED21DE2DC50028F582 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9C7EC21DE2DC50028F582 /* AppDelegate.m */; };
 		7FD9C7F521DE2DC60028F582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FD9C7F421DE2DC60028F582 /* Assets.xcassets */; };
 		7FD9C7F821DE2DC60028F582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD9C7F621DE2DC60028F582 /* LaunchScreen.storyboard */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72738DA521DFA51A00D528D4 /* dns.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dns.h; sourceTree = "<group>"; };
+		72738DA621DFA51A00D528D4 /* dns.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dns.c; sourceTree = "<group>"; };
+		72A0994421E1CD9C00417E5B /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		7FD9C7E821DE2DC50028F582 /* Network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Network.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD9C7EB21DE2DC50028F582 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7FD9C7EC21DE2DC50028F582 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -104,10 +109,13 @@
 			children = (
 				7FD9C7EB21DE2DC50028F582 /* AppDelegate.h */,
 				7FD9C7EC21DE2DC50028F582 /* AppDelegate.m */,
+				72A0994421E1CD9C00417E5B /* iconfont.ttf */,
 				7FD9C81D21DE2EAA0028F582 /* DnsController.h */,
 				7FD9C81E21DE2EAA0028F582 /* DnsController.m */,
 				7FD9C82021DE3CC00028F582 /* udp.h */,
 				7FD9C82121DE3CC00028F582 /* udp.c */,
+				72738DA521DFA51A00D528D4 /* dns.h */,
+				72738DA621DFA51A00D528D4 /* dns.c */,
 				7FD9C7F421DE2DC60028F582 /* Assets.xcassets */,
 				7FD9C7F621DE2DC60028F582 /* LaunchScreen.storyboard */,
 				7FD9C7F921DE2DC60028F582 /* Info.plist */,
@@ -239,6 +247,7 @@
 			files = (
 				7FD9C7F821DE2DC60028F582 /* LaunchScreen.storyboard in Resources */,
 				7FD9C7F521DE2DC60028F582 /* Assets.xcassets in Resources */,
+				72A0994521E1D31B00417E5B /* iconfont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +275,7 @@
 				7FD9C7FB21DE2DC60028F582 /* main.m in Sources */,
 				7FD9C7ED21DE2DC50028F582 /* AppDelegate.m in Sources */,
 				7FD9C81F21DE2EAA0028F582 /* DnsController.m in Sources */,
+				72738DA721DFA51A00D528D4 /* dns.c in Sources */,
 				7FD9C82221DE3CC00028F582 /* udp.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
