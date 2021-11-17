@@ -52,15 +52,28 @@ char * DnsSearch(const char * domain) {
     p[next] = 0;
     p[next + 2] = 0x1;
     p[next + 4] = 0x1;
-    sendUdpMsg(p, next + 5, "192.168.123.1", "53");
+    sendUdpMsg(p, next + 5, "192.168.125.1", "53");
     free(p);
     return DnsDecode(domain);
 }
 
 char * DnsDecode(const char * domain) {
-    uint8_t * dnsData;
-    socklen_t t;
-    size_t dnsSize = recvUdpMsg(&dnsData, NULL, &t);
+    size_t bufSize = 10;
+    uint8_t * dnsData = (uint8_t *) calloc(bufSize, 1);
+    size_t dnsSize = recvUdpMsg(dnsData, bufSize, NULL, NULL, MSG_WAITALL | MSG_PEEK);
+    while (dnsSize == bufSize) {
+        free(dnsData);
+        bufSize += 10;
+        dnsData = (uint8_t *) calloc(bufSize, 1);
+        dnsSize = recvUdpMsg(dnsData, bufSize, NULL, NULL, MSG_PEEK);
+        printf("size: %lu\n", dnsSize);
+        for (int i = 0; i < dnsSize; i++) {
+            printf("%02x", dnsData[i]);
+        }
+        printf("\n");
+    }
+    
+    printf("\n");
     char * ipaddress = calloc(20, 1);
     printf("dnsSize: %lu\n", dnsSize);
     if (dnsSize) {

@@ -28,11 +28,8 @@ ssize_t sendUdpMsg(const void * data, size_t len, char * host, char * port) {
     return sendUdpMsgWithSockaddr(data, len, result->ai_addr, result->ai_addrlen);
 }
 
-ssize_t recvUdpMsg(void ** data, struct sockaddr * addr, socklen_t * addrlen) {
-    char * recvData = (char *) calloc(1024, 1);
-    
-    ssize_t t = recvfrom(socket_id, recvData, 1024, 0, addr, addrlen);
-    *data = recvData;
+ssize_t recvUdpMsg(void * data, size_t size, struct sockaddr * addr, socklen_t * addrlen, int type) {
+    ssize_t t = recvfrom(socket_id, data, size, type, addr, addrlen);
     return t;
 }
 

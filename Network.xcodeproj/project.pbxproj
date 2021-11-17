@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		72738DA721DFA51A00D528D4 /* dns.c in Sources */ = {isa = PBXBuildFile; fileRef = 72738DA621DFA51A00D528D4 /* dns.c */; };
 		72A0994521E1D31B00417E5B /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72A0994421E1CD9C00417E5B /* iconfont.ttf */; };
+		7F4190ED228A5D7000A93960 /* sourceroute.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F4190EC228A5D7000A93960 /* sourceroute.c */; };
+		7F4190F2228A6CD800A93960 /* tcpcli01.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F4190F1228A6CD800A93960 /* tcpcli01.c */; };
+		7F46D8D7226096FE00AF9D6B /* TextToVoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F46D8D6226096FE00AF9D6B /* TextToVoice.m */; };
+		7F572EBD225DBB3C00EED64E /* dgserv.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F572EBC225DBB3C00EED64E /* dgserv.c */; };
 		7FD9C7ED21DE2DC50028F582 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9C7EC21DE2DC50028F582 /* AppDelegate.m */; };
 		7FD9C7F521DE2DC60028F582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FD9C7F421DE2DC60028F582 /* Assets.xcassets */; };
 		7FD9C7F821DE2DC60028F582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD9C7F621DE2DC60028F582 /* LaunchScreen.storyboard */; };
@@ -17,6 +21,8 @@
 		7FD9C81021DE2DC60028F582 /* NetworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9C80F21DE2DC60028F582 /* NetworkUITests.m */; };
 		7FD9C81F21DE2EAA0028F582 /* DnsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9C81E21DE2EAA0028F582 /* DnsController.m */; };
 		7FD9C82221DE3CC00028F582 /* udp.c in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9C82121DE3CC00028F582 /* udp.c */; };
+		7FFF7366226706B300501276 /* libunp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFF7365226706B300501276 /* libunp.a */; };
+		7FFF7369226707AE00501276 /* ntest.c in Sources */ = {isa = PBXBuildFile; fileRef = 7FFF7368226707AE00501276 /* ntest.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,14 @@
 		72738DA521DFA51A00D528D4 /* dns.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dns.h; sourceTree = "<group>"; };
 		72738DA621DFA51A00D528D4 /* dns.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dns.c; sourceTree = "<group>"; };
 		72A0994421E1CD9C00417E5B /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
+		7F4190EB228A5D7000A93960 /* sourceroute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sourceroute.h; sourceTree = "<group>"; };
+		7F4190EC228A5D7000A93960 /* sourceroute.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sourceroute.c; sourceTree = "<group>"; };
+		7F4190F0228A6CD800A93960 /* tcpcli01.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tcpcli01.h; sourceTree = "<group>"; };
+		7F4190F1228A6CD800A93960 /* tcpcli01.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tcpcli01.c; sourceTree = "<group>"; };
+		7F46D8D5226096FE00AF9D6B /* TextToVoice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextToVoice.h; sourceTree = "<group>"; };
+		7F46D8D6226096FE00AF9D6B /* TextToVoice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextToVoice.m; sourceTree = "<group>"; };
+		7F572EBB225DBB3C00EED64E /* dgserv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dgserv.h; sourceTree = "<group>"; };
+		7F572EBC225DBB3C00EED64E /* dgserv.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dgserv.c; sourceTree = "<group>"; };
 		7FD9C7E821DE2DC50028F582 /* Network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Network.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD9C7EB21DE2DC50028F582 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7FD9C7EC21DE2DC50028F582 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,6 +71,9 @@
 		7FD9C81E21DE2EAA0028F582 /* DnsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DnsController.m; sourceTree = "<group>"; };
 		7FD9C82021DE3CC00028F582 /* udp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = udp.h; sourceTree = "<group>"; };
 		7FD9C82121DE3CC00028F582 /* udp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = udp.c; sourceTree = "<group>"; };
+		7FFF7365226706B300501276 /* libunp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libunp.a; path = ../unixnetworkprogram/libunp.a; sourceTree = "<group>"; };
+		7FFF7367226707AE00501276 /* ntest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ntest.h; sourceTree = "<group>"; };
+		7FFF7368226707AE00501276 /* ntest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ntest.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FFF7366226706B300501276 /* libunp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +109,7 @@
 				7FD9C80321DE2DC60028F582 /* NetworkTests */,
 				7FD9C80E21DE2DC60028F582 /* NetworkUITests */,
 				7FD9C7E921DE2DC50028F582 /* Products */,
+				7FFF7364226706B300501276 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,10 +135,20 @@
 				7FD9C82121DE3CC00028F582 /* udp.c */,
 				72738DA521DFA51A00D528D4 /* dns.h */,
 				72738DA621DFA51A00D528D4 /* dns.c */,
+				7F572EBB225DBB3C00EED64E /* dgserv.h */,
+				7F572EBC225DBB3C00EED64E /* dgserv.c */,
+				7F46D8D5226096FE00AF9D6B /* TextToVoice.h */,
+				7F46D8D6226096FE00AF9D6B /* TextToVoice.m */,
+				7FFF7367226707AE00501276 /* ntest.h */,
+				7FFF7368226707AE00501276 /* ntest.c */,
+				7F4190EB228A5D7000A93960 /* sourceroute.h */,
+				7F4190EC228A5D7000A93960 /* sourceroute.c */,
 				7FD9C7F421DE2DC60028F582 /* Assets.xcassets */,
 				7FD9C7F621DE2DC60028F582 /* LaunchScreen.storyboard */,
 				7FD9C7F921DE2DC60028F582 /* Info.plist */,
 				7FD9C7FA21DE2DC60028F582 /* main.m */,
+				7F4190F0228A6CD800A93960 /* tcpcli01.h */,
+				7F4190F1228A6CD800A93960 /* tcpcli01.c */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -140,6 +169,14 @@
 				7FD9C81121DE2DC60028F582 /* Info.plist */,
 			);
 			path = NetworkUITests;
+			sourceTree = "<group>";
+		};
+		7FFF7364226706B300501276 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FFF7365226706B300501276 /* libunp.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +310,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FD9C7FB21DE2DC60028F582 /* main.m in Sources */,
+				7F4190F2228A6CD800A93960 /* tcpcli01.c in Sources */,
 				7FD9C7ED21DE2DC50028F582 /* AppDelegate.m in Sources */,
 				7FD9C81F21DE2EAA0028F582 /* DnsController.m in Sources */,
+				7F46D8D7226096FE00AF9D6B /* TextToVoice.m in Sources */,
 				72738DA721DFA51A00D528D4 /* dns.c in Sources */,
+				7F572EBD225DBB3C00EED64E /* dgserv.c in Sources */,
+				7FFF7369226707AE00501276 /* ntest.c in Sources */,
+				7F4190ED228A5D7000A93960 /* sourceroute.c in Sources */,
 				7FD9C82221DE3CC00028F582 /* udp.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,14 +482,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DU5SP7K29;
+				HEADER_SEARCH_PATHS = /Users/wentaoxing/Documents/unixnetworkprogram/lib;
 				INFOPLIST_FILE = Network/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = /Users/wentaoxing/Documents/unixnetworkprogram;
 				PRODUCT_BUNDLE_IDENTIFIER = f.Network;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -456,14 +502,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DU5SP7K29;
+				HEADER_SEARCH_PATHS = /Users/wentaoxing/Documents/unixnetworkprogram/lib;
 				INFOPLIST_FILE = Network/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = /Users/wentaoxing/Documents/unixnetworkprogram;
 				PRODUCT_BUNDLE_IDENTIFIER = f.Network;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

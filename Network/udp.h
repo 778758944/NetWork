@@ -10,7 +10,7 @@
 #define udp_h
 
 static int socket_id;
-
+#include <stdio.h>
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netdb.h>
@@ -19,7 +19,7 @@ static int socket_id;
 
 int initUdp(void);
 ssize_t sendUdpMsg(const void * data, size_t len, char * host, char * port);
-ssize_t recvUdpMsg(void ** data, struct sockaddr * addr, socklen_t * addrlen);
+ssize_t recvUdpMsg(void * data, size_t size, struct sockaddr * addr, socklen_t * addrlen, int type);
 ssize_t sendUdpMsgWithSockaddr(const void * data, size_t len, struct sockaddr * addr, socklen_t addrlen);
 
 #endif /* udp_h */

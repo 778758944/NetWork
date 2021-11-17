@@ -9,6 +9,9 @@
 #import "DnsController.h"
 #import "udp.h"
 #import "dns.h"
+#import "dgserv.h"
+#import "ntest.h"
+#import "tcpcli01.h"
 
 @interface DnsController ()
 @property(nonatomic, strong) UITextField * textField;
@@ -92,7 +95,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    initUdp();
+    tcproutecli("10.100.122.76", "10.100.122.1");
+//    tcpecho();
+//    initUdp();
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.textField];
 //    [self.view addSubview:self.search];
